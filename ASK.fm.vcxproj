@@ -129,9 +129,11 @@
   <ItemGroup>
     <ClCompile Include="ASK.fm.cpp" />
     <ClCompile Include="Question.cpp" />
+    <ClCompile Include="User.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Question.h" />
+    <ClInclude Include="User.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

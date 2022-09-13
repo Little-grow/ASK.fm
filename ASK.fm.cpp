@@ -6,7 +6,6 @@
 #include<queue>
 #include<set>
 #include<map>
-
 using namespace std;
 
 vector<string> ReadFileLines(string path)
