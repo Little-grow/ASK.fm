@@ -27,17 +27,16 @@ vector<string> ReadFileLines(string path)
 		lines.push_back(line);
 	}
 
-
 	file_handler.close();
 	return lines;
 }
 
 void WriteFileLines(string path, vector<string> lines, bool append = true)
 {
-	auto status = ios::in | ios::out | ios::app;
+	auto status = ios::in | ios::out | ios::app;  
 
 	if (!append)
-		status = ios::in | ios::out | ios::trunc;
+		status = ios::in | ios::out | ios::trunc; 
 
 	fstream file_handler(path.c_str(), status);
 	if (file_handler.fail())
@@ -47,7 +46,7 @@ void WriteFileLines(string path, vector<string> lines, bool append = true)
 	}
 
 	for (auto line : lines)
-		file_handler << line << '\n';
+		file_handler << line << '\n';  
 	file_handler.close();
 }
 

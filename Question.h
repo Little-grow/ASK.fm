@@ -17,13 +17,14 @@ private:
 	int parent_ques_id;
 	int from_user_id;
 	int to_user_id;
-	int is_anon_ques;
+	
 	int from_user_id;
 	
 	std::string  ques_text;
 	std::string answer_text;
 
 public:
+	int is_anon_ques;
 	Question()
 	{
 		ques_id = parent_ques_id = from_user_id = to_user_id = -1;
@@ -103,5 +104,46 @@ public:
 		if (answer_text != "")
 			cout << "\tAnswer: " << answer_text << '\n';
 	}
+
+	int GetQuestionId()
+	{
+		return ques_id;
+	}
+	void SetQuestionId(int quesId)
+	{
+		ques_id = quesId;
+	}
+	int GetParentId()
+	{
+		return parent_ques_id;
+	}
+
+	int GetFromUserId()
+	{
+		return from_user_id;
+	}
+	void SetFromUserId(int userFromID)
+	{
+		from_user_id = userFromID;
+	}
+	
+	int GetToUserId()
+	{
+		return to_user_id;
+	}
+	void SetToUserId(int ToUserId)
+	{
+		to_user_id = ToUserId;
+	}
+
+	string GetQuesText()
+	{
+		return ques_text;
+	}
+	string GetAnswerText()
+	{
+		return answer_text;
+	}
+
 };
 

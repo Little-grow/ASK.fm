@@ -23,9 +23,12 @@ private:
 	string email;
 	int allow_anon_ques;
 
+	
+public:
+
 	vector<int> question_id_from_me;
 	map<int, vector<int>> questionId_questionIdsThread_to_map;
-public:
+
 	User()
 	{
 		user_id = allow_anon_ques = -1;
@@ -55,6 +58,11 @@ public:
 	void print()
 	{
 		cout << "User " << user_id << "," << user_name << " " << password << "," << name << "," << email << '\n';
+	}
+
+	int GetUserId()
+	{
+		return user_id;
 	}
 };
 
